@@ -18,7 +18,7 @@
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
-    --bs-primary: #06a3da;
+    --bs-primary: #8d1313 ;
     --bs-secondary: #f57e57;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -49,7 +49,8 @@
   }
   body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "lexend", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -2524,7 +2525,7 @@
     border: 1px solid transparent;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
-    border-radius: 2px;
+    border-radius: 4px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
@@ -3931,12 +3932,12 @@
     color: rgba(0, 0, 0, 0.9);
   }
   .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, 0.55);
-    border-color: rgba(0, 0, 0, 0.1);
+    color: rgb(141 19 19);
+    border: none;
   }
-  .navbar-light .navbar-toggler-icon {
+  /* .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
+  } */
   .navbar-light .navbar-text {
     color: rgba(0, 0, 0, 0.55);
   }
@@ -3967,12 +3968,12 @@
     color: #fff;
   }
   .navbar-dark .navbar-toggler {
-    color: rgba(255, 255, 255, 0.55);
-    border-color: rgba(255, 255, 255, 0.1);
+    color: rgb(141 19 19);
+    border: none;
   }
-  .navbar-dark .navbar-toggler-icon {
+  /* .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
+  } */
   .navbar-dark .navbar-text {
     color: rgba(255, 255, 255, 0.55);
   }
@@ -6816,7 +6817,8 @@
     color: #dc3545 !important;
   }
   .text-light {
-    color: #eef9ff !important;
+    /* color: #eef9ff !important; */
+    color:#4a4c50 !important;
   }
   .text-dark {
     color: #091e3e !important;
