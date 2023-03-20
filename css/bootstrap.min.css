@@ -2861,13 +2861,13 @@
     border-color: #091e3e;
   }
   .btn-outline-primary {
-    color: #06a3da;
-    border-color: #06a3da;
+    color: #8d1313 ;
+    border-color: #8d1313 ;
   }
   .btn-outline-primary:hover {
-    color: #000;
-    background-color: #06a3da;
-    border-color: #06a3da;
+    color: #fff;
+    background-color: #8d1313 ;
+    border-color: #8d1313 ;
   }
   .btn-check:focus + .btn-outline-primary,
   .btn-outline-primary:focus {

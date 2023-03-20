@@ -135,10 +135,10 @@ h6,
 
 .carousel-caption {
     top: 0;
-    left: 0;
+    /* left: 0; */
     right: 0;
     bottom: 0;
-    background: rgba(9, 30, 62, .85);
+    /* background: rgba(9, 30, 62, .85); */
     z-index: 1;
 }
 
@@ -401,6 +401,9 @@ h6,
     opacity: .87;
 }
 @media (min-width: 768px){
+    .topbar-display{
+        display:none !important;
+    }
     .bg-offer div.container{
         padding:3rem 0 3rem 0;
     }
