@@ -6,6 +6,22 @@
     --dark: #424242;
     
 }
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../lib/fonts/PlayfairDisplay-Regular.otf') format('truetype');
+    
+  }
+@font-face{
+    font-family: 'DancingScript';
+    src: url('../lib/fonts/DancingScript-Bold.ttf') format('truetype');
+    
+}
+  .section-title, .classic-title{
+    font-family:DancingScript;
+    font-weight: 900 !important;
+    font-size:2.5rem;
+  }
+
 /* Import the font using @font-face */
 /* @font-face {
     font-family: 'dancing_script';
@@ -613,10 +629,7 @@ background-color:#20212e;
        
     }
 }
-.section-title{
-    font-family: 'Dancing Script';
-    font-weight: 600;
-}
+
 .category-item img{
     width:100% !important;
 }
@@ -732,6 +745,9 @@ button.slide_from_top::after {
     padding-left: 0;
     align-items: center;
 }
+.classic-menu .card-title{
+    font-size:1rem !important;
+}
 }
 .custom_nav-container .navbar-toggler {
     outline: none !important;
@@ -828,3 +844,72 @@ button.slide_from_top::after {
         display:block;
     }
    }
+/* .title-custom{
+    color:#424242;
+    font-weight:400;
+
+} */
+/* .our-service-bg{
+    background: url(../img/banner-menu/midBG.jpg) center top no-repeat;
+    min-height: 345px;
+    background-size: cover;
+} */
+.classic-title{ 
+    border-bottom: 1px solid #eee;
+    font-weight: 400;
+}
+.classic-title span{
+    border-bottom: 1px solid #7B1FA2;
+    font-weight: 400;
+}
+.card-services .card-body:hover{
+background-color:#e9b5ff;
+position:relative;
+}
+.card-services .card-body{
+    background-color:#f6f6f6;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+}
+
+.card-services .card-body h3{
+    font-weight:300;
+    color:#212121 !important;
+    font-size:1.5rem;
+}
+.card-services .card-body h3 span{
+    font-size:.8rem;
+}
+.classic-menu .card-title{
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #000000b3;
+}
+.classic-menu .card-footer{
+    background-color:#7B1FA2;
+    border-top:none !important;
+    padding:0 !important;
+}
+.classic-menu .card-footer a{
+    display:block !important;
+}
+.card{
+    border:none !important;
+    box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
+}
+.classic-more{
+    padding:.5rem;
+    background-color:#EDE7F6;
+
+}
+.classic-more a{
+    text-transform: uppercase;
+    text-align:center;
+    display:block;
+    color:#7B1FA2;
+}
