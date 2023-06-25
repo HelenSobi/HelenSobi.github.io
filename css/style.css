@@ -16,6 +16,16 @@
     src: url('../lib/fonts/DancingScript-Bold.ttf') format('truetype');
     
 }
+@font-face{
+    font-family: 'latoLight';
+    src: url('../lib/fonts/Lato-Light.ttf') format('truetype');
+    
+}
+@font-face{
+    font-family: 'latoRegular';
+    src: url('../lib/fonts/Lato-Regular.ttf') format('truetype');
+    
+}
   .section-title, .classic-title{
     font-family:DancingScript;
     font-weight: 900 !important;
@@ -205,22 +215,55 @@ background-color:#20212e;
 }
 
 /* Menu Header */
-.menu-header,.service-header{
-    height:400px;
-    background-position: center center;
+.menu-header,.service-header, .aboutus-header,.contactus-header {
+    height:300px;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center;
 }
-.service-header{
-    
-    background: url(../img/banner-sevces-1.jpg);
-    
-}
-.menu-header h1.section-title, .service-header h1.section-title{
+
+/* .menu-header h1.section-title, .service-header h1.section-title{
     font-size:5rem;
+} */
+@media (max-width: 576px){
+    .menu-header, .aboutus-header, .contactus-header, .service-header{
+        height:200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .menu-header{
+        background: url(../img/banner/banner-menu_mobile.jpg);
+    }
+    .aboutus-header{
+        background: url(../img/banner/banner-aboutus_mobile.jpg);
+    }
+    .contactus-header{
+        background: url(../img/banner/banner-contactus_mobile.jpg);
+    }
+    .service-header{   
+        background: url(../img/banner/banner-services_mobile.jpg);   
+    }
 }
-.menu-header{
-    background: url(../img/banner-menu-1.jpg);
+@media (min-width: 576px){
+    .menu-header, .aboutus-header, .contactus-header, .service-header{
+        height:300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .menu-header{
+        background: url(../img/banner/banner-menu.jpg);
+    }
+    .aboutus-header{
+        background: url(../img/banner/banner-aboutus.jpg);
+    }
+    .contactus-header{
+        background: url(../img/banner/banner-contactus.jpg);
+    }
+    .service-header{   
+        background: url(../img/banner/banner-services.jpg);   
+    }
 }
 @keyframes imgRotate { 
     100% { 
@@ -562,12 +605,12 @@ background-color:#20212e;
     margin-bottom:0 !important;
 }
 .nav-pills .nav-item .active {
-    border-bottom: 2px solid #EDE7F6;
+    border-bottom: 2px solid #F4FF81;
     padding-bottom: 0 !important;
 }
 .nav-pills.menuPage-nav-pills li a.active{
-    border-bottom: 2px solid #EDE7F6;
-    padding-bottom: 0.5rem !important;
+    border: 1px solid #F4FF81;
+    padding: 0.5rem !important;
 }
 @media (max-width: 992px) {
     .navbar-dark{
@@ -581,20 +624,20 @@ background-color:#20212e;
         width:100%;
     }
     /*** Food Menu ***/
-    .nav-pills li.nav-item{
+    .nav-pills.menuPage-nav-pills li.nav-item{
         margin-bottom: 0.5rem;
         margin-right: 1rem;
-        border: 1px solid #D1C4E9;
-        background-color: #EDE7F6;
+        /* border: 1px solid #D1C4E9;
+        background-color: #EDE7F6; */
     }
-    .nav-pills li.nav-item h6{
+    .nav-pills.menuPage-nav-pills li.nav-item h6{
         padding:.5rem;
         margin-bottom:0 !important;
     }
-    .nav-pills li.nav-item .active {
-        border-bottom: 2px solid var(--primary);
+    /* .nav-pills.menuPage-nav-pills li.nav-item .active {
+        border-bottom: 2px solid #F4FF81;
         
-    }
+    } */
     .card .custom-card-title{
         padding:0 !important;
      }
@@ -605,6 +648,13 @@ background-color:#20212e;
         font-size:.7rem !important;
      }
 }
+@media (max-width: 576px) {
+    .nav-pills.menuPage-nav-pills li.nav-item::after {
+        content:"";
+        border-right:1px solid #F4FF81;
+        margin-left:.5rem;
+    }
+}
 @media (min-width: 992px) {
     .top-nav-titles ul.top-nav-disp-2{
         display:none;
@@ -612,8 +662,8 @@ background-color:#20212e;
     /*** Food Menu ***/
     .nav-pills li.nav-item{
       
-        margin-right: 2rem;
-        padding-left:1rem;
+        /* margin-right: 2rem;
+        padding-left:1rem; */
     }
     ul.nav-pills li:last-child {
         margin-right: 0;
@@ -912,4 +962,16 @@ position:relative;
     text-align:center;
     display:block;
     color:#7B1FA2;
+}
+h1.submenu-title{
+    font-family:'DancingScript';
+    color:#7B1FA2;
+}
+ul.menu-listed{
+    padding:0;
+}
+ul.menu-listed li{
+    font-family:"latoRegular", sans-serif;
+    list-style-type: none;
+    color:#424242;
 }
