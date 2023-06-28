@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: 'PlayfairDisplay';
-    src: url('../lib/fonts/PlayfairDisplay-Regular.otf') format('truetype');
+    src: url('../lib/fonts/PlayfairDisplay-Bold.otf') format('truetype');
     
   }
 @font-face{
@@ -26,11 +26,26 @@
     src: url('../lib/fonts/Lato-Regular.ttf') format('truetype');
     
 }
+@font-face{
+    font-family: 'Raleway';
+    src: url('../lib/fonts/Raleway-Medium.ttf') format('truetype');
+    
+}
   .section-title, .classic-title{
-    font-family:DancingScript;
-    font-weight: 900 !important;
-    font-size:2.5rem;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    font-size:2rem;
   }
+  @media (max-width: 992px) {
+    .section-title, .classic-title{
+        font-size:1rem;
+        font-family: 'latoRegular', sans-serif;
+        font-weight:600;
+    }
+  }
+.banner-title{
+    font-family:'PlayfairDisplay', sans-serif;
+}
 
 /* Import the font using @font-face */
 /* @font-face {
@@ -44,10 +59,6 @@
   } */
 .bg-topheader{
 background-color:#20212e;
-}
-.ff-secondary {
-    /* font-family: 'Pacifico', cursive; */
-    /* font-family: 'dancing_script', cursive; */
 }
 
 .fw-medium {
@@ -172,8 +183,9 @@ background-color:#20212e;
     }
 
     .navbar-dark .navbar-brand img {
+        padding:.5rem 0 .5rem 0;
         display: block;
-        max-width: 80%;
+        /* max-width: 80%; */
         height: auto;
         /* max-height: 45px; */
     }
@@ -210,59 +222,73 @@ background-color:#20212e;
     background-size: cover;
 }
 
-.hero-header img {
+.hero-header img, .menu-header img,.service-header img, .aboutus-header img,.contactus-header img {
     animation: imgRotate 50s linear infinite;
 }
 
 /* Menu Header */
 .menu-header,.service-header, .aboutus-header,.contactus-header {
     height:300px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+.hero-title{
+    font-family: 'DancingScript',cursive;
 }
 
 /* .menu-header h1.section-title, .service-header h1.section-title{
     font-size:5rem;
 } */
 @media (max-width: 576px){
+    .who-Caterar{
+        display:none;
+    }
+    .hero-title{
+        font-size:2rem;
+    }
+    
     .menu-header, .aboutus-header, .contactus-header, .service-header{
         height:200px;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
     }
     .menu-header{
-        background: url(../img/banner/banner-menu_mobile.jpg);
+        background-image: url(../img/banner/banner-menu_mobile.jpg);
     }
     .aboutus-header{
-        background: url(../img/banner/banner-aboutus_mobile.jpg);
+        background-image: url(../img/banner/banner-aboutus_mobile.jpg);
     }
     .contactus-header{
-        background: url(../img/banner/banner-contactus_mobile.jpg);
+        background-image: url(../img/banner/banner-contactus_mobile.jpg);
     }
     .service-header{   
-        background: url(../img/banner/banner-services_mobile.jpg);   
+        background-image: url(../img/banner/banner-services_mobile.jpg);   
     }
 }
 @media (min-width: 576px){
     .menu-header, .aboutus-header, .contactus-header, .service-header{
         height:300px;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
     }
+    .hero-title{
+        font-size:3rem;
+        padding-top:3rem;
+    }
     .menu-header{
-        background: url(../img/banner/banner-menu.jpg);
+        background-image: url(../img/banner/banner-menu.jpg);
     }
     .aboutus-header{
-        background: url(../img/banner/banner-aboutus.jpg);
+        background-image: url(../img/banner/banner-aboutus.jpg);
     }
     .contactus-header{
-        background: url(../img/banner/banner-contactus.jpg);
+        background-image: url(../img/banner/banner-contactus.jpg);
     }
     .service-header{   
-        background: url(../img/banner/banner-services.jpg);   
+        background-image: url(../img/banner/banner-services.jpg);   
     }
 }
 @keyframes imgRotate { 
@@ -308,7 +334,9 @@ background-color:#20212e;
 .section-title.text-end::after {
     display: none;
 }
-
+.footer p.text-secondary{
+    font-size: .9rem;
+}
 
 /*** Service ***/
 .service-item {
@@ -480,9 +508,9 @@ background-color:#20212e;
     transition: .5s;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-    border-color: var(--primary) !important;
+.testimonial-carousel .owl-item.center .testimonial-item .card-footer {
+    /* background: var(--primary) !important; */
+    /* border-color: var(--primary) !important; */
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
@@ -675,9 +703,7 @@ background-color:#20212e;
         border-bottom: 4px solid var(--primary);
         padding-bottom: 1rem;
     }
-    .card .custom-card-title{
-       
-    }
+   
 }
 
 .category-item img{
@@ -734,9 +760,7 @@ background-color:#20212e;
 .why-caterar .why-img{
 height:150px;
 }
-.why-caterar img{
-    /* width:70% !important;*/
-} 
+
 .border-light-purple{
     border:2px solid #fce4ec
 }
@@ -884,7 +908,7 @@ button.slide_from_top::after {
     transform: skew(40deg);
 }
 .bg-topheader p{
-    font-family: 'Nunito',sans-serif;
+    font-family: 'lexend',sans-serif;
    }
    .sh-custom{
     display:none;
@@ -910,7 +934,7 @@ button.slide_from_top::after {
 }
 .classic-title span{
     border-bottom: 1px solid #7B1FA2;
-    font-weight: 400;
+   
 }
 .card-services .card-body:hover{
 background-color:#e9b5ff;
@@ -933,14 +957,14 @@ position:relative;
 .card-services .card-body h3 span{
     font-size:.8rem;
 }
-.classic-menu .card-title{
+.classic-menu .card-title, .testimonial-item .card-title{
     color: #fff;
     padding: 1rem;
     font-size: 1rem;
     font-weight: 400;
     background-color: #000000b3;
 }
-.classic-menu .card-footer{
+.classic-menu .card-footer, .testimonial-item .card-footer{
     background-color:#7B1FA2;
     border-top:none !important;
     padding:0 !important;
@@ -967,6 +991,12 @@ h1.submenu-title{
     font-family:'DancingScript';
     color:#7B1FA2;
 }
+.submenu-title span{
+    color:#414141;
+    font-family:"lexend",sans-serif;
+    font-size:1.2rem;
+    padding:0 .5rem 0 .5rem;
+}
 ul.menu-listed{
     padding:0;
 }
@@ -974,4 +1004,10 @@ ul.menu-listed li{
     font-family:"latoRegular", sans-serif;
     list-style-type: none;
     color:#424242;
+}
+.discover-menu{
+    padding: 0.5rem;
+    background-color: #EDE7F6;
+        color: #7B1FA2;
+    text-transform: uppercase;
 }
