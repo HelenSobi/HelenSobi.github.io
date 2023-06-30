@@ -31,13 +31,13 @@
     src: url('../lib/fonts/Raleway-Medium.ttf') format('truetype');
     
 }
-  .section-title, .classic-title{
+  .section-title, .classic-title,.enquiry-title h5{
     font-family:'Raleway', sans-serif;
     font-weight: 600;
     font-size:2rem;
   }
   @media (max-width: 992px) {
-    .section-title, .classic-title{
+    .section-title, .classic-title, .enquiry-title h5{
         font-size:1rem;
         font-family: 'latoRegular', sans-serif;
         font-weight:600;
@@ -982,10 +982,18 @@ position:relative;
 
 }
 .classic-more a{
-    text-transform: uppercase;
-    text-align:center;
-    display:block;
+    /* text-transform: uppercase; */
+    /* text-align:center;
+    display:block; */
     color:#7B1FA2;
+}
+.enquiry-title{
+    text-align:center;
+   
+   
+}
+.enquiry-title span{
+font-family: "lexend", sans-serif;
 }
 h1.submenu-title{
     font-family:'DancingScript';
@@ -1010,4 +1018,9 @@ ul.menu-listed li{
     background-color: #EDE7F6;
         color: #7B1FA2;
     text-transform: uppercase;
+}
+/* Gallery */
+.gal-item {
+    overflow: hidden;
+    padding: 3px;
 }
